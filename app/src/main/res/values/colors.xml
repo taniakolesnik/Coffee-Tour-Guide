@@ -3,7 +3,8 @@
     <color name="colorPrimary">#93B48B</color>
     <color name="colorPrimaryDark">#8491A3</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="color_name">#87D68D</color>
-    <color name="color_address">#BCEBCB</color>
-    <color name="color_phone">#F7FFF6</color>
+    <color name="color_name">#5D4C46</color>
+    <color name="color_address">#E45641</color>
+    <color name="color_phone">#F1A94E</color>
+    <color name="color_text_name">#F2EDD8</color>
 </resources>

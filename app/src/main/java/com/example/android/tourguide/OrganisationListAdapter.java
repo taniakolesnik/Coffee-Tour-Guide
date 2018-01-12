@@ -46,12 +46,15 @@ public class OrganisationListAdapter extends ArrayAdapter<Organisation> {
 
         TextView name = (TextView) listItemView.findViewById(R.id.name_list_item);
         name.setText(currentOrganisation.getOrganisationName());
+        name.setTextIsSelectable(true);
 
         TextView address = (TextView) listItemView.findViewById(R.id.address_list_item);
         address.setText(currentOrganisation.getOrganisationAddress());
+        address.setTextIsSelectable(true);
 
-        TextView phone = (TextView) listItemView.findViewById(R.id.phone_list_item);
-        phone.setText(currentOrganisation.getOrganisationPhone());
+        TextView openHours = (TextView) listItemView.findViewById(R.id.phone_list_item);
+        openHours.setText(currentOrganisation.getOrganisationOpenHours());
+        openHours.setTextIsSelectable(true);
 
         // http://google.com/maps?q=SE1+1EB
 

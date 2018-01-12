@@ -8,12 +8,12 @@ public class Organisation {
 
     private String mName;
     private String mAddress;
-    private String mPhone;
+    private String mOpenHours;
 
-    public Organisation(String name, String address, String phone) {
+    public Organisation(String name, String address, String openHours) {
         mName = name;
         mAddress = address;
-        mPhone = phone;
+        mOpenHours = openHours;
     }
 
     public String getOrganisationName(){
@@ -24,8 +24,8 @@ public class Organisation {
         return mAddress;
     }
 
-    public String getOrganisationPhone(){
-        return mPhone;
+    public String getOrganisationOpenHours(){
+        return mOpenHours;
     }
 
 }

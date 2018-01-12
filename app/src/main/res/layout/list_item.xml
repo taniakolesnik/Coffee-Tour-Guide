@@ -47,7 +47,7 @@
             style="@style/ListPhoneStyle"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
-            android:text="Phone" />
+            android:text="Open Hours" />
     </LinearLayout>
 
     <ImageView
