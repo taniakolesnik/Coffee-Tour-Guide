@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(new SimpleFragmentPagerAdapter(getSupportFragmentManager(), getApplicationContext()));
         viewPager.setCurrentItem(1);
 
-
     }
 
     private class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {

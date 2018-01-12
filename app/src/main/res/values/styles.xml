@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ListNameStyle">
+        <item name="android:background">@color/color_name</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ListAddressStyle">
+        <item name="android:background">@color/color_address</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="ListPhoneStyle">
+        <item name="android:background">@color/color_phone</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
 </resources>

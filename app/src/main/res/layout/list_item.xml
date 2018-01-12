@@ -4,67 +4,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:id="@+id/list_item">
 
     <ImageView
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_weight="1"
-        android:src="@mipmap/ic_launcher" />
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:id="@+id/logo"
+        android:src="@drawable/ic_diamond" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_weight="2"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.example.android.tourguide.MainActivity">
 
         <TextView
             android:id="@+id/name_list_item"
+            style="@style/ListNameStyle"
+            android:minHeight="40dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:text="Name"
-            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            style="@style/ListAddressStyle"
             android:id="@+id/address_list_item"
+            android:minHeight="20dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Address"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"
+            android:text="Address" />
 
         <TextView
             android:id="@+id/phone_list_item"
+            style="@style/ListPhoneStyle"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="Phone"
-            android:background="@color/colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="fill_parent"
+            android:text="Phone" />
     </LinearLayout>
 
-    <TextView
+    <ImageView
         android:id="@+id/map_list_item"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:layout_weight="1"
-        android:text="MAP"
-        android:background="@android:color/darker_gray"
-        android:textSize="30dp"/>
-
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:src="@drawable/ic_map" />
 
 </LinearLayout>
