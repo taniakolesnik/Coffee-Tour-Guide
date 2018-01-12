@@ -12,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/list_item_height"
         android:id="@+id/logo"
-        android:src="@drawable/ic_diamond" />
+        android:src="@drawable/ic_diamond"
+        android:background="@color/colorPrimaryDark"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -53,6 +54,7 @@
         android:id="@+id/map_list_item"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/list_item_height"
-        android:src="@drawable/ic_map" />
+        android:src="@drawable/ic_map"
+        android:background="@color/colorPrimaryDark"/>
 
 </LinearLayout>

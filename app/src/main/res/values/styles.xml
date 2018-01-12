@@ -9,7 +9,7 @@
     </style>
 
     <style name="ListNameStyle">
-        <item name="android:background">@color/color_name</item>
+        <item name="android:background">@color/colorAccent</item>
         <item name="android:padding">8dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textSize">16dp</item>

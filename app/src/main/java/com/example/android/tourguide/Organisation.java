@@ -27,4 +27,5 @@ public class Organisation {
     public String getOrganisationPhone(){
         return mPhone;
     }
+
 }
