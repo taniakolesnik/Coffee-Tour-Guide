@@ -29,17 +29,17 @@ public class NorthFragment extends Fragment {
 
         ArrayList<Organisation> organisations = new ArrayList<Organisation>();
         organisations.add(new Organisation("52A Coffee House", "52A Southgate Rd, London N1 3JF",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_wine_1936919));
         organisations.add(new Organisation("Costa Coffee", "117-119 Essex Rd, London N1 2SN",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_synthesizer_1936918));
         organisations.add(new Organisation("Caffè Nero", "75 Upper St, London N1 0NU",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_workplace_1936905));
         organisations.add(new Organisation("The Workers' Cafe", "404 Kingsland Rd, London E8 4AA",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_almaz_1936910));
         organisations.add(new Organisation("Subtitles Cafe", "42 Balls Pond Rd, Dalston, London N1 4AP",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_helmet_1936914));
         organisations.add(new Organisation("HER Coffee", "13 Downham Rd, London N1 5AA",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm",R.drawable.if_wine_1936919));
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         OrganisationListAdapter listAdapter = new OrganisationListAdapter(getActivity(), organisations);

@@ -54,17 +54,17 @@ public class OrganisationListAdapter extends ArrayAdapter<Organisation> {
         openHours.setText(currentOrganisation.getOrganisationOpenHours());
         openHours.setTextIsSelectable(true);
 
-        // http://google.com/maps?q=SE1+1EB
-
         ImageView mapImage = (ImageView) listItemView.findViewById(R.id.map_list_item);
         mapImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Toast.makeText(getContext(), "ulr : " + postCode, Toast.LENGTH_LONG).show();
                 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://google.com/maps?q=" + postCode));
                 getContext().startActivity(myIntent);
             }
         });
+
+        ImageView image = (ImageView) listItemView.findViewById(R.id.image_list_item);
+        image.setImageResource(currentOrganisation.getOrganisationImage());
 
         return listItemView;
     }

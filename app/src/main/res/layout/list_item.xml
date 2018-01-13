@@ -39,7 +39,7 @@
             android:minHeight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="address" />
+            android:text="addressttttttttttttttttttttttttttttttttttttttttttttttttttttt" />
 
         <TextView
             android:id="@+id/phone_list_item"
@@ -48,6 +48,16 @@
             android:layout_height="fill_parent"
             android:text="Open Hours" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/map_list_item"
+        android:layout_toStartOf="@+id/map_list_item"
+        android:paddingRight="16dp"
+        android:src="@drawable/if_almaz_1936910" />
 
     <ImageView
         android:id="@+id/map_list_item"

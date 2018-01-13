@@ -9,6 +9,15 @@ public class Organisation {
     private String mName;
     private String mAddress;
     private String mOpenHours;
+    private int mImage;
+
+    public Organisation(String name, String address, String openHours, int image) {
+        mName = name;
+        mAddress = address;
+        mOpenHours = openHours;
+        mImage = image;
+    }
+
 
     public Organisation(String name, String address, String openHours) {
         mName = name;
@@ -26,6 +35,10 @@ public class Organisation {
 
     public String getOrganisationOpenHours(){
         return mOpenHours;
+    }
+
+    public int getOrganisationImage(){
+        return mImage;
     }
 
 }

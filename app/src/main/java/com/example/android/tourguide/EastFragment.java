@@ -34,17 +34,17 @@ public class EastFragment extends Fragment {
 
         ArrayList<Organisation> organisations = new ArrayList<Organisation>();
         organisations.add(new Organisation("Curious Yellow Kafe", "77 Pitfield St, London N1 6BT",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_paper_plane_1936915));
         organisations.add(new Organisation("Friends of Ours", " 61 Pitfield St, London N1 6BU",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_workplace_1936905));
         organisations.add(new Organisation("The Bach Hoxton", "98 Hoxton St, London N1 6SG",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_helmet_1936914));
         organisations.add(new Organisation("Hoxton Cabin", "132 Kingsland Rd, London E2 8DY",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_synthesizer_1936918));
         organisations.add(new Organisation("Fabrique Bakery", " Arch 385, Geffrye St, London E2 8HZ",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_almaz_1936910));
         organisations.add(new Organisation("Auguste Handmade", "187 Hoxton St, London N1 6RA",
-                "Mon - Sun 8am–6:30pm"));
+                "Mon - Sun 8am–6:30pm", R.drawable.if_wine_1936919));
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         OrganisationListAdapter listAdapter = new OrganisationListAdapter(getActivity(), organisations);
