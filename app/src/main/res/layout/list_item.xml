@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,17 +8,16 @@
     android:orientation="horizontal"
     android:id="@+id/list_item">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/list_item_height"
-        android:id="@+id/logo"
-        android:src="@drawable/ic_diamond"
-        android:background="@color/colorPrimaryDark"/>
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="@dimen/list_item_height"-->
+        <!--android:id="@+id/logo"-->
+        <!--android:src="@drawable/ic_diamond"-->
+        <!--android:background="@color/colorPrimaryDark"/>-->
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
         android:orientation="vertical"
         tools:context="com.example.android.tourguide.MainActivity">
 
@@ -40,11 +39,11 @@
             android:minHeight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Address" />
+            android:text="address" />
 
         <TextView
             android:id="@+id/phone_list_item"
-            style="@style/ListPhoneStyle"
+            style="@style/ListOpenHoursStyle"
             android:layout_width="match_parent"
             android:layout_height="fill_parent"
             android:text="Open Hours" />
@@ -53,8 +52,10 @@
     <ImageView
         android:id="@+id/map_list_item"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/list_item_height"
-        android:src="@drawable/ic_map"
-        android:background="@color/colorPrimaryDark"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_maps"
+        android:paddingRight="16dp"/>
 
-</LinearLayout>
+</RelativeLayout>

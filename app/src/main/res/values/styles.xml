@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
     </style>
 
     <style name="ListNameStyle">
@@ -13,23 +14,24 @@
         <item name="android:padding">8dp</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:textColor">@color/color_text_name</item>
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingRight">16dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="ListAddressStyle">
-        <item name="android:background">@color/color_address</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:textColor">@color/color_text_name</item>
+        <item name="android:background">@color/color_text_name</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">100dp</item>
         <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">12dp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
-    <style name="ListPhoneStyle">
-        <item name="android:background">@color/color_phone</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:gravity">center_vertical</item>
-        <item name="android:textSize">12dp</item>
+    <style name="ListOpenHoursStyle">
+        <item name="android:background">@color/color_text_name</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">12sp</item>
     </style>
 
 </resources>

@@ -30,12 +30,18 @@ public class WestFragment extends Fragment {
 
 
         ArrayList<Organisation> organisations = new ArrayList<Organisation>();
-        organisations.add(new Organisation("The CoffeeWorks Project", "96-98 Islington High St, Islington, London N1 8EG", "020 7424 5020"));
-        organisations.add(new Organisation("Coffee Junction", " 42 Provost St, London N1 7SU", "020 7253 6335"));
-        organisations.add(new Organisation("Westland Coffee & Wine", "1 Westland Pl, London N1 7LP", "00000"));
-        organisations.add(new Organisation("Pret A Manger", "Eagle House, 161 City Rd, London EC1V 1NR", "020 7253 7266"));
-        organisations.add(new Organisation("Shepherdess Cafe", "221 City Rd, London EC1V 1JN", "020 7253 2463"));
-        organisations.add(new Organisation("Benugo", "8-9 Angel Gate, London EC1V 2PT", "020 7242 3726"));
+        organisations.add(new Organisation("The CoffeeWorks Project",
+                "96-98 Islington High St, Islington, London N1 8EG", "020 7424 5020"));
+        organisations.add(new Organisation("Coffee Junction", " 42 Provost St, London N1 7SU",
+                "Mon - Sun 8am–6:30pm"));
+        organisations.add(new Organisation("Westland Coffee & Wine", "1 Westland Pl, London N1 7LP",
+                "Mon - Sun 8am–6:30pm"));
+        organisations.add(new Organisation("Pret A Manger", "Eagle House, 161 City Rd, London EC1V 1NR",
+                "Mon - Sun 8am–6:30pm"));
+        organisations.add(new Organisation("Shepherdess Cafe", "221 City Rd, London EC1V 1JN",
+                "Mon - Sun 8am–6:30pm"));
+        organisations.add(new Organisation("Benugo", "8-9 Angel Gate, London EC1V 2PT",
+                "Mon - Sun 8am–6:30pm"));
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         OrganisationListAdapter listAdapter = new OrganisationListAdapter(getActivity(), organisations);

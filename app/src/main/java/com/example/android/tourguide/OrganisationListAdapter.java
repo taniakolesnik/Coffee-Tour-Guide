@@ -30,7 +30,6 @@ public class OrganisationListAdapter extends ArrayAdapter<Organisation> {
         super(context, 0, organisations);
     }
 
-
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -39,7 +38,6 @@ public class OrganisationListAdapter extends ArrayAdapter<Organisation> {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
-
 
         Organisation currentOrganisation = getItem(position);
         final String postCode = currentOrganisation.getOrganisationAddress().replaceAll(" ", "+");
@@ -62,7 +60,7 @@ public class OrganisationListAdapter extends ArrayAdapter<Organisation> {
         mapImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // Toast.makeText(getContext(), "ulr : " + postCode, Toast.LENGTH_LONG).show();
+                // Toast.makeText(getContext(), "ulr : " + postCode, Toast.LENGTH_LONG).show();
                 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://google.com/maps?q=" + postCode));
                 getContext().startActivity(myIntent);
             }
