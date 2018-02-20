@@ -2,4 +2,6 @@
 <resources>
     <!-- Height of each list item -->
     <dimen name="list_item_height">88dp</dimen>
+    <dimen name="list_divider_height">4px</dimen>
+    <dimen name="padding_standard">16dp</dimen>
 </resources>

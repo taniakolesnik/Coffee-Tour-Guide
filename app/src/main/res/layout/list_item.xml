@@ -8,13 +8,6 @@
     android:orientation="horizontal"
     android:id="@+id/list_item">
 
-    <!--<ImageView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="@dimen/list_item_height"-->
-        <!--android:id="@+id/logo"-->
-        <!--android:src="@drawable/ic_diamond"-->
-        <!--android:background="@color/colorPrimaryDark"/>-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/list_item_height"
@@ -27,7 +20,6 @@
             android:minHeight="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -38,15 +30,13 @@
             android:id="@+id/address_list_item"
             android:minHeight="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="addressttttttttttttttttttttttttttttttttttttttttttttttttttttt" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/phone_list_item"
             style="@style/ListOpenHoursStyle"
             android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:text="Open Hours" />
+            android:layout_height="fill_parent" />
     </LinearLayout>
 
     <ImageView
@@ -56,8 +46,8 @@
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/map_list_item"
         android:layout_toStartOf="@+id/map_list_item"
-        android:paddingRight="16dp"
-        android:src="@drawable/if_almaz_1936910" />
+        android:paddingRight="@dimen/padding_standard"
+        android:src="@drawable/if_almaz" />
 
     <ImageView
         android:id="@+id/map_list_item"
@@ -66,6 +56,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_maps"
-        android:paddingRight="16dp"/>
+        android:paddingRight="@dimen/padding_standard"
+        android:paddingEnd="@dimen/padding_standard"/>
 
 </RelativeLayout>
