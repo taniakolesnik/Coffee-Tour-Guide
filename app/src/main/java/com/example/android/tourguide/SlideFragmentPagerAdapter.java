@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SlideFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public SlideFragmentPagerAdapter(FragmentManager supportFragmentManager, Context applicationContext) {
+    public SlideFragmentPagerAdapter(FragmentManager supportFragmentManager, Context context) {
         super(supportFragmentManager);
     }
 
@@ -38,8 +38,4 @@ public class SlideFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         return fragmentsTabsName[position];
     }
-
-
-
-
 }

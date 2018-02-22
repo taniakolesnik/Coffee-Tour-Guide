@@ -4,41 +4,39 @@ package com.example.android.tourguide;
  * Created by tetianakolesnik on 11/01/2018.
  */
 
-public class Organisation {
+public class Place {
 
     private String mName;
     private String mAddress;
     private String mOpenHours;
     private int mImage;
 
-    public Organisation(String name, String address, String openHours, int image) {
+    public Place(String name, String address, String openHours, int image) {
         mName = name;
         mAddress = address;
         mOpenHours = openHours;
         mImage = image;
     }
 
-
-    public Organisation(String name, String address, String openHours) {
+    public Place(String name, String address, String openHours) {
         mName = name;
         mAddress = address;
         mOpenHours = openHours;
     }
 
-    public String getOrganisationName(){
+    public String getPlaceName(){
         return mName;
     }
 
-    public String getOrganisationAddress(){
+    public String getPlaceAddress(){
         return mAddress;
     }
 
-    public String getOrganisationOpenHours(){
+    public String getPlaceOpenHours(){
         return mOpenHours;
     }
 
-    public int getOrganisationImage(){
+    public int getPlaceImage(){
         return mImage;
     }
-
 }

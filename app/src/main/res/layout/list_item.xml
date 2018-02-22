@@ -15,7 +15,7 @@
         tools:context="com.example.android.tourguide.MainActivity">
 
         <TextView
-            android:id="@+id/name_list_item"
+            android:id="@+id/name_text_view"
             style="@style/ListNameStyle"
             android:minHeight="40dp"
             android:layout_width="match_parent"
@@ -27,30 +27,30 @@
 
         <TextView
             style="@style/ListAddressStyle"
-            android:id="@+id/address_list_item"
+            android:id="@+id/address_text_view"
             android:minHeight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/phone_list_item"
+            android:id="@+id/phone_text_view"
             style="@style/ListOpenHoursStyle"
             android:layout_width="match_parent"
             android:layout_height="fill_parent" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/image_list_item"
+        android:id="@+id/picture_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/map_list_item"
-        android:layout_toStartOf="@+id/map_list_item"
+        android:layout_toLeftOf="@+id/map_image_view"
+        android:layout_toStartOf="@+id/map_image_view"
         android:paddingRight="@dimen/padding_standard"
         android:src="@drawable/if_almaz" />
 
     <ImageView
-        android:id="@+id/map_list_item"
+        android:id="@+id/map_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"

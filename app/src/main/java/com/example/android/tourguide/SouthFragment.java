@@ -7,8 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
-
 import java.util.ArrayList;
 
 /**
@@ -24,28 +22,32 @@ public class SouthFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.list_view, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_layout, container, false);
 
-        ArrayList<Organisation> organisations = new ArrayList<Organisation>();
-        organisations.add(new Organisation("Look mum no hands!", "49 Old St, London EC1V 9HX",
-                "Mon - Sun 8am–6:30pm"));
-        organisations.add(new Organisation("Ozone Coffee Roasters", "11 Leonard St, London EC2A 4AQ",
-                "Mon - Sun 8am–6:30pm"));
-        organisations.add(new Organisation("Starbucks Coffee", "74/78 Finsbury Pavement, London EC2A 1AT",
-                "Mon - Sun 8am–6:30pm"));
-        organisations.add(new Organisation("Wild & Wood Coffee", "47 London Wall, London EC2M 5TE",
-                "Mon - Sun 8am–6:30pm"));
-        organisations.add(new Organisation("Caffè Nero", "Unit 5, Moorgate Station, Moorgate, London EC2Y 9AG",
-                "Mon - Sun 8am–6:30pm"));
-        organisations.add(new Organisation("Fix Coffee", "161 Whitecross St, London EC1Y 8JL",
-                "Mon - Sun 8am–6:30pm"));
+        ArrayList<Place> places = new ArrayList<Place>();
+        places.add(new Place(getString(R.string.south_coffeeShopOne_name),
+                getString(R.string.south_coffeeShopOne_address),
+                getString(R.string.south_coffeeShopOne_openHours)));
+        places.add(new Place(getString(R.string.south_coffeeShopTwo_name),
+                getString(R.string.south_coffeeShopTwo_address),
+                getString(R.string.south_coffeeShopTwo_openHours)));
+        places.add(new Place(getString(R.string.south_coffeeShopThree_name),
+                getString(R.string.south_coffeeShopThree_address),
+                getString(R.string.south_coffeeShopThree_openHours)));
+        places.add(new Place(getString(R.string.south_coffeeShopFour_name),
+                getString(R.string.south_coffeeShopFour_address),
+                getString(R.string.south_coffeeShopFour_openHours)));
+        places.add(new Place(getString(R.string.south_coffeeShopFive_name),
+                getString(R.string.south_coffeeShopFive_address),
+                getString(R.string.south_coffeeShopFive_openHours)));
+        places.add(new Place(getString(R.string.south_coffeeShopSix_name),
+                getString(R.string.south_coffeeShopSix_address),
+                getString(R.string.south_coffeeShopSix_openHours)));
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
-        OrganisationListAdapter listAdapter = new OrganisationListAdapter(getActivity(), organisations);
+        ListView listView = (ListView) rootView.findViewById(R.id.list_view);
+        PlaceListAdapter listAdapter = new PlaceListAdapter(getActivity(), places);
         listView.setAdapter(listAdapter);
 
         return rootView;
-
     }
-
 }
