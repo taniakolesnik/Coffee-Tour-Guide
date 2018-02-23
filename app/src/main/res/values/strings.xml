@@ -1,114 +1,84 @@
 <resources>
     <string name="app_name">Tour Guide</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_maps">Map</string>
-
+    <!-- Tabs names -->
+    <string name="west_name">West</string>
     <string name="south_name">South</string>
-
+    <string name="east_name">East</string>
+    <string name="north_name">North</string>
+    <!-- South -->
     <string name="south_coffeeShopOne_name">Look mum no hands!</string>
     <string name="south_coffeeShopOne_address">49 Old St, London EC1V 9HX</string>
     <string name="south_coffeeShopOne_openHours">Mon - Sun 8am–10:00pm</string>
-
     <string name="south_coffeeShopTwo_name">Ozone Coffee Roasters</string>
     <string name="south_coffeeShopTwo_address">11 Leonard St, London EC2A 4AQ</string>
     <string name="south_coffeeShopTwo_openHours">Mon - Sat 8am–6:30pm</string>
-
     <string name="south_coffeeShopThree_name">Starbucks Coffee</string>
     <string name="south_coffeeShopThree_address">74/78 Finsbury Pavement, London EC2A 1AT</string>
     <string name="south_coffeeShopThree_openHours">Mon - Sun 6am–9:00pm</string>
-
     <string name="south_coffeeShopFour_name">Wild &amp; Coffee</string>
     <string name="south_coffeeShopFour_address">47 London Wall, London EC2M 5TE</string>
     <string name="south_coffeeShopFour_openHours">Mon - Fri 8am–7:30pm</string>
-
     <string name="south_coffeeShopFive_name">Caffè Nero</string>
     <string name="south_coffeeShopFive_address">Unit 5, Moorgate Station, Moorgate, London EC2Y 9AG</string>
     <string name="south_coffeeShopFive_openHours">Mon - Sun 5am–7:30pm</string>
-
     <string name="south_coffeeShopSix_name">Fix Coffee</string>
     <string name="south_coffeeShopSix_address">161 Whitecross St, London EC1Y 8JL</string>
     <string name="south_coffeeShopSix_openHours">Mon - Thu 8am–6:00pm</string>
-
-    <string name="west_name">West</string>
-
+    <!-- West -->
     <string name="west_coffeeShopOne_name">The CoffeeWorks Project</string>
     <string name="west_coffeeShopOne_address">96/98 Islington High St, Islington, London N1 8EG</string>
     <string name="west_coffeeShopOne_openHours">Mon - Sun 8am–10:00pm</string>
-
     <string name="west_coffeeShopTwo_name">Coffee Junction</string>
     <string name="west_coffeeShopTwo_address">42 Provost St, London N1 7SU</string>
     <string name="west_coffeeShopTwo_openHours">Mon - Sat 8am–5:30pm</string>
-
     <string name="west_coffeeShopThree_name">Westland Coffee &amp; Wine</string>
     <string name="west_coffeeShopThree_address">1 Westland Pl, London N1 7LP</string>
     <string name="west_coffeeShopThree_openHours">Mon - Thu 8am–6:00pm</string>
-
     <string name="west_coffeeShopFour_name">Pret A Manger</string>
     <string name="west_coffeeShopFour_address">Eagle House, 161 City Rd, London EC1V 1NR</string>
     <string name="west_coffeeShopFour_openHours">Mon - Fri 6am–7:30pm</string>
-
     <string name="west_coffeeShopFive_name">Shepherdess Cafe</string>
     <string name="west_coffeeShopFive_address">221 City Rd, London EC1V 1JN</string>
     <string name="west_coffeeShopFive_openHours">Mon - Sun 5am–7:30pm</string>
-
     <string name="west_coffeeShopSix_name">Benugo</string>
     <string name="west_coffeeShopSix_address">8/9 Angel Gate, London EC1V 2PT</string>
     <string name="west_coffeeShopSix_openHours">Mon - Thu 8am–6:00pm</string>
-
-    <string name="east_name">East</string>
-
+    <!-- East -->
     <string name="east_coffeeShopOne_name">Curious Yellow Kafe</string>
     <string name="east_coffeeShopOne_address">77 Pitfield St, London N1 6BT</string>
     <string name="east_coffeeShopOne_openHours">Mon - Fri 8am–9:00pm</string>
-
     <string name="east_coffeeShopTwo_name">Friends of Ours</string>
     <string name="east_coffeeShopTwo_address">61 Pitfield St, London N1 6BU</string>
     <string name="east_coffeeShopTwo_openHours">Mon - Sat 9am–6:30pm</string>
-
     <string name="east_coffeeShopThree_name">The Bach Hoxton</string>
     <string name="east_coffeeShopThree_address">98 Hoxton St, London N1 6SG</string>
     <string name="east_coffeeShopThree_openHours">Mon - Sun 6am–9:00pm</string>
-
     <string name="east_coffeeShopFour_name">Hoxton Cabin</string>
     <string name="east_coffeeShopFour_address">132 Kingsland Rd, London E2 8DY</string>
     <string name="east_coffeeShopFour_openHours">Mon - Fri 8am–7:30pm</string>
-
     <string name="east_coffeeShopFive_name">Fabrique Bakery</string>
     <string name="east_coffeeShopFive_address">Arch 385, Geffrye St, London E2 8HZ</string>
     <string name="east_coffeeShopFive_openHours">Mon - Sat 5am–7:30pm</string>
-
     <string name="east_coffeeShopSix_name">Auguste Handmade</string>
     <string name="east_coffeeShopSix_address">187 Hoxton St, London N1 6RA</string>
     <string name="east_coffeeShopSix_openHours">Mon - Thu 8am–6:00pm</string>
-
-
-
-    <string name="north_name">North</string>
-
+    <!-- North -->
     <string name="north_coffeeShopOne_name">52A Coffee House</string>
     <string name="north_coffeeShopOne_address">52A Southgate Rd, London N1 3JF</string>
     <string name="north_coffeeShopOne_openHours">Mon - Fri 9am–9:00pm</string>
-
     <string name="north_coffeeShopTwo_name">Costa Coffee</string>
     <string name="north_coffeeShopTwo_address">117-119 Essex Rd, London N1 2SN</string>
     <string name="north_coffeeShopTwo_openHours">Mon - Sat 9am–6:30pm</string>
-
     <string name="north_coffeeShopThree_name">Caffè Nero</string>
     <string name="north_coffeeShopThree_address">75 Upper St, London N1 0NU</string>
     <string name="north_coffeeShopThree_openHours">Mon - Fri 7am–9:00pm</string>
-
     <string name="north_coffeeShopFour_name">The Workers Cafe</string>
     <string name="north_coffeeShopFour_address">404 Kingsland Rd, London E8 4AA</string>
     <string name="north_coffeeShopFour_openHours">Mon - Fri 9:30am–7:30pm</string>
-
     <string name="north_coffeeShopFive_name">Subtitles Cafe</string>
     <string name="north_coffeeShopFive_address">42 Balls Pond Rd, Dalston, London N1 4AP</string>
     <string name="north_coffeeShopFive_openHours">Mon - Sat 5am–7:30pm</string>
-
     <string name="north_coffeeShopSix_name">HER Coffee</string>
     <string name="north_coffeeShopSix_address">13 Downham Rd, London N1 5AA</string>
     <string name="north_coffeeShopSix_openHours">Mon - Sat 8am–7:00pm</string>
-
 </resources>

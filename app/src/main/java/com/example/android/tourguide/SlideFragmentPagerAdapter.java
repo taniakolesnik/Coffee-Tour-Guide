@@ -1,13 +1,19 @@
 package com.example.android.tourguide;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class SlideFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    public SlideFragmentPagerAdapter(FragmentManager supportFragmentManager, Context context) {
+    private static final int POSITION_ZERO = 0;
+    private static final int POSITION_ONE = 1;
+    private static final int POSITION_TWO = 2;
+    private static final int POSITION_THREE = 3;
+
+    public SlideFragmentPagerAdapter(FragmentManager supportFragmentManager, Context applicationContext) {
         super(supportFragmentManager);
     }
 
@@ -16,13 +22,13 @@ public class SlideFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0:
+            case POSITION_ZERO:
                 return new WestFragment();
-            case 1:
+            case POSITION_ONE:
                 return new SouthFragment();
-            case 2:
+            case POSITION_TWO:
                 return new NorthFragment();
-            case 3:
+            case POSITION_THREE:
                 return new EastFragment();
             default:
                 return null;
